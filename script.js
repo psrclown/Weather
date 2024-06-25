@@ -31,6 +31,7 @@ if(data.weather[0].main == "clouds"){
         img.src = "img/rain.png"
     }
     document.querySelector(".weather").style.display = "block";
+    document.querySelector(".error").style.display = "none";
 }
 btn.addEventListener("click", () =>{
     checkweather(textbox.value);
