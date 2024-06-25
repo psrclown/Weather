@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #638fb3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card{
+    height: 75vh;
+    width: 53vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;  
+    background-image: url("/img/white-clouds-blue-background.jpg") ;
+    background-size: cover;
+    
+}
+#data{
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    background: rgb(193, 228, 245);
+    border: none;
+    color: rgb(0, 0, 0);
+    height: 4vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+#search{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#search button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#search-btn{
+    height: 3vh;
+    width: 1.8vw;
+    padding-left: .5vh;
+}
+#cityname{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 5vh;
+}
+h1{
+    font-family: "Roboto Condensed", sans-serif;
+    
+}
+
+.weather-icon{
+    height: 20vh;
+    width: 11.6vw;
+    margin-bottom: 5vh;
+}
+
+.data2-text{
+    font-size: 3.5vh;
+}
+
+#data2{
+    margin-top: 12vh;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.data2-img{
+    height: 4vh;
+    width: 2.5vw;
+}
+
+#humidity{
+    display: flex;
+    width: 29%;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+}
+
+#windspeed{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+}
+
+#names{
+    display: flex;
+    margin-left: 1.2vw;
+    font-size: 2vh;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 1vh;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+}
