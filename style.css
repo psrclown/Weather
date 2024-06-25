@@ -57,7 +57,7 @@ input{
 
 #search-btn{
     height: 3vh;
-    width: 1.8vw;
+    width: 1.9vw;
     padding-left: .5vh;
 }
 #cityname{
@@ -67,6 +67,8 @@ input{
 }
 h1{
     font-family: "Roboto Condensed", sans-serif;
+    font-size: 8vh;
+    font-weight: 900;
     
 }
 
@@ -81,7 +83,7 @@ h1{
 }
 
 #data2{
-    margin-top: 12vh;
+    margin-top: 10vh;
     display: flex;
     width: 80%;
     justify-content: space-between;
@@ -92,7 +94,7 @@ h1{
     width: 2.5vw;
 }
 
-#humidity{
+#humidity-section{
     display: flex;
     width: 29%;
     justify-content: space-between;
