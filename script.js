@@ -2,15 +2,19 @@ const apikey = "9866d4f084ca7ac2ab4796f07c41f417";
 const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 let textbox = document.querySelector("input");
 let btn = document.querySelector("button");
-let img = document.querySelector(".weather-icon") 
+let img = document.querySelector(".weather-icon");
+let hide = document.querySelector(".weather");
 
 async function checkweather(city){
-    const response = await fetch(apiurl + city + `&appid=${apikey}`);
+    var response = await fetch(apiurl + city + `&appid=${apikey}`);
+    console.log(response.status);
     if(response.status == 404){
         document.querySelector(".error").style.display = "block";
+        hide.style.display = "none";
     }
     let data = await response.json();
     console.log(data);
+    console.log(response);
 
     document.querySelector("#cityname").innerText = data.name;
     document.querySelector("#temp").innerText = Math.round(data.main.temp)+ "°C";
@@ -35,13 +39,16 @@ if(data.weather[0].main == "clouds"){
 }
 btn.addEventListener("click", () =>{
     checkweather(textbox.value);
-    if(textbox.value !== ""){
-        hide.classList.remove("weather");
-    }else if(response.status == 404){
-        hide.classList.remove("weather");
-    }
-    console.log(apiurl);
 });
+
+// btn.addEventListener("click", () =>{
+//     checkweather(textbox.value);
+//     console.log(textbox.value);
+//     if(textbox.value === ){
+        
+//     }
+// });
+
 
 
 
