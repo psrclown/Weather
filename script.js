@@ -12,6 +12,10 @@ async function checkweather(city){
         document.querySelector(".error").style.display = "block";
         hide.style.display = "none";
     }
+    if(city == ""){
+        document.querySelector(".error").style.display = "block";
+        hide.style.display = "none";
+    }
     let data = await response.json();
     console.log(data);
     console.log(response);
