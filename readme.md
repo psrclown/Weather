@@ -2,7 +2,9 @@
 
 A sleek and responsive **Weather App** that fetches real-time weather data using a public API. Built with **HTML, CSS, and JavaScript**, this application provides current weather details for any city entered by the user.
 
-![Weather App Screenshot](https://attendancecounter-psrclown.netlify.app/)
+<p align="center">
+  <img src="https://res.cloudinary.com/dvzwgucdm/image/upload/v1749357869/Screenshot_2025-06-08_at_10.12.56_AM_q7e4or.png" alt="Weather app" width="700"/>
+</p>
 
 ---
 
